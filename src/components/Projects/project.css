@@ -1,0 +1,13 @@
+.projects{
+    position: relative;
+}
+
+.addProjBtn{
+    
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px;
+
+}

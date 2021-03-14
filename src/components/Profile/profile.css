@@ -1,0 +1,41 @@
+/* .forms{
+    width:50%;
+} */
+
+.profile{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 100px;
+    position:relative;
+}
+
+.profiles{
+    display: flex;
+}
+
+
+.names{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.submitBtn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border-color: rgb(80, 80, 253);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.submitBtn:hover{
+    color: white;
+    background: rgb(80, 80, 253);
+}
+

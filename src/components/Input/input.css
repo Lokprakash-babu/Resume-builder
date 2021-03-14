@@ -1,0 +1,28 @@
+.inputField{
+    all: unset;
+    display: inline-block;
+    width: 250px;
+    border-bottom: 2px solid rgb(187, 187, 187);
+}
+
+.inputs{
+    position: relative;
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+.labelField{
+    position: absolute;
+    display: none;
+    top: -27px;
+}
+.inputField:valid{
+    background-color: none;
+}
+
+.inputField:valid + label{
+    display: block;
+}
+
+/* .inputField:invalid{
+    border-bottom: 2px solid red;
+} */

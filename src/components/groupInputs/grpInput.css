@@ -1,0 +1,17 @@
+.groupInput{
+    border: 2px solid #dbdbdb;
+    position: relative;
+display: block;
+width: max-content;
+padding: 45px 264px;
+margin: auto;
+border-radius: 36px;
+}
+
+.deleteIcon{
+    all: unset;
+    position: absolute;
+    top:14px;
+    right:18px;
+    cursor: pointer;
+}
