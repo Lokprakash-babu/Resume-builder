@@ -7,7 +7,7 @@ const FirstName = () => {
 
     return (
         <div className="firstName">
-            <Input label="First Name" type="text" changer={changeFirstName} value={firstName} required/>
+            <Input label="First Name" type="text" changer={changeFirstName} value={firstName} placeholder="First Name" required/>
         </div>
     );
 }

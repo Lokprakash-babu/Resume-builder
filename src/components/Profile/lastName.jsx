@@ -6,7 +6,7 @@ const LastName = () => {
     const lastName=useSelector((state)=>state.lastName);
     return (
         <div className="lastName">
-            <Input label="Last Name" type="text" changer={changeLastName} value={lastName} required/>
+            <Input label="Last Name" type="text" changer={changeLastName} placeholder="Last Name" value={lastName} required/>
         </div>
     )
 }

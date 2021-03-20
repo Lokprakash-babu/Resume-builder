@@ -6,7 +6,7 @@ const Phone = () => {
     const phone=useSelector((state)=>state.phone);
     return (
         <div>
-            <Input label="Phone" type="tel" changer={changePhone} value={phone} required/>
+            <Input label="Phone" type="tel" changer={changePhone} value={phone} placeholder="Phone" required/>
         </div>
     )
 }

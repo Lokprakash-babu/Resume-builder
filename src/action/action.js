@@ -36,6 +36,7 @@ export const changeGit=(name)=>{
 }
 
 export const changeLinkedin=(name)=>{
+    console.log('name', name);
     return {
         type:"LINKEDIN",
         payload:name

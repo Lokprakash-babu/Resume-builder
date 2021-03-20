@@ -6,7 +6,7 @@ const Email = () => {
     const email=useSelector((state)=>state.email);
     return (
         <div className="email">
-            <Input label="Email" type="email" changer={changeEmail} value={email} required/>
+            <Input label="Email" type="email" changer={changeEmail} value={email} placeholder="Email" required/>
         </div>
     )
 }
