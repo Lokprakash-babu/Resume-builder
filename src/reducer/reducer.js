@@ -56,7 +56,7 @@ const Reducer=(state={
         case "LINKEDIN":
             return {
                 ...state,
-                linkedin:action.payload
+                linkedIn:action.payload
             }
         case "SITE":
             return {

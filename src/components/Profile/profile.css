@@ -34,8 +34,24 @@
     transition: all 0.2s ease;
 }
 
-.submitBtn:hover{
+.nextBtn{
+    cursor: pointer;
+    all: unset;
+    border: 2px solid green;
+    padding: 4px 25px;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in;
+}
+
+.btnContainer{
+    width: 100%;
+    position: relative;
+}
+.nextBtn:hover{
     color: white;
-    background: rgb(80, 80, 253);
+    background: green;
 }
 

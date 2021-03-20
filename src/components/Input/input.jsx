@@ -7,7 +7,6 @@ const Input = ({value, type, label, required, changer, placeholder}) => {
     const dispatch=useDispatch();
     
     function change(e){
-        console.log(e.target.value);
         dispatch(changer(e.target.value));
     }
     return (
