@@ -1,3 +1,4 @@
+import {uuid} from 'uuidv4';
 
 
 export const changeFirstName=(name)=>{
@@ -74,5 +75,35 @@ export const changeSkills=(name)=>{
     return {
         type:"SKILLS",
         payload:name
+    }
+}
+
+export const addProjects=(projects)=>{
+    let newProj=[...projects];
+    newProj.push({
+        key: uuid(),
+        title:"",
+        link:"",
+        description:""
+    });
+    return {
+        type:"PROJECTS",
+        payload:newProj
+    }
+}
+
+export const removeProject=(projects)=>{
+    let newProj=[...projects];
+    return {
+        type:"PROJECTS",
+        payload:newProj
+    }
+}
+export const editProjects=(projects)=>{
+    let newProj=[...projects];
+    
+    return {
+        type: "PROJECTS",
+        payload: newProj
     }
 }

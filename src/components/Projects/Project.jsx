@@ -1,41 +1,22 @@
 import React, {useState} from 'react';
 import './project.css';
-import GrpInput from '../groupInputs/grpInput';
-
-
+import {useSelector, useDispatch} from 'react-redux';
+import ProjectComp from '../ProjectComp/ProjectComp';
+import {addProjects} from '../../action/action';
 const Project = () => {
 
-    const [projects, addProject]=useState([]);
+    const projects=useSelector((state)=>state.projects);
 
-    function handleAddProject(){
-        let project=[...projects];
-        project.push({});
-        addProject(project);
+    const dispatch = useDispatch()
+    function addProj(){
+        dispatch(addProjects(projects));
     }
-
-    function handleSubmit(data){
-        console.log('projects', projects);
-    }
-
-    function removeProject(data){
-        projects.splice(data,1);
-        let project=[...projects];
-        addProject(project);
-    }
-
-    function handleChange(data){
-        let ind=data.target.id.split('-');
-        projects[parseInt(ind[0])][ind[1]]=data.target.value;
-        let newProject=[...projects];
-        addProject(newProject);
-    }
-
     return (
         <div className="projects">
             {
-                projects.map((data, ind)=><GrpInput onSubmit={handleSubmit} index={ind} key={ind} data={data} detectChange={handleChange} remove={removeProject}/>)
+                projects.map((ele, idx)=><ProjectComp key={ele.key} all={projects} value={ele} ind={idx} />)
             }
-            <button className="addProjBtn" onClick={handleAddProject}>Add project</button>
+            <button class="addProjectBtn" onClick={addProj}>Add Project</button>
         </div>
     )
 }

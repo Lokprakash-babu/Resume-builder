@@ -12,7 +12,6 @@
 //     skills:[]
 // }
 
-
 const Reducer=(state={
     firstName:"",
     lastName:"",
